@@ -1,0 +1,137 @@
+@import '../element-variables.scss';
+.documents {
+  &__title {
+    margin-bottom: 18px;
+  }
+  &__actions {
+    width: 100%;
+    margin-bottom: 26px;
+    &__label {
+      font-size: 15px;
+      color: #000000;
+    }
+    &__input {
+      padding-left: 7px;
+      margin-left: 18px;
+      margin-top: 1px;
+      background: #ffffff;
+      border: 1px solid #e0dfdf;
+      box-sizing: border-box;
+      width: 330px;
+      outline: none;
+      height: 36px;
+      border-radius: 5px 0px 0px 5px;
+      font-family: $font-reg;
+    }
+    &__button {
+      background: #2b70d6;
+      border-radius: 0px 5px 5px 0px;
+      margin-left: -4px;
+      width: 115px;
+      height: 36px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      font-size: 15px;
+      font-family: $font-reg;
+      &.right-floated {
+        border-radius: 6px;
+        width: 176px;
+        height: 36px;
+        float: right;
+        margin-top: -3px;
+        padding-top: 10px;
+      }
+    }
+  }
+  &__results-count {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 9px;
+  }
+  &__create {
+    width: 100%;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #e0dfdf;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    &__title {
+      font-family: $font-semi;
+      font-size: 18px;
+      line-height: 25px;
+      color: black;
+      margin-bottom: 22px;
+    }
+    .centered {
+      display: grid;
+      align-items: center;
+      place-items: center;
+    }
+    &__subtitle {
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      color: #817f7f;
+      margin-top: 19px;
+      margin-bottom: 136px;
+    }
+  }
+  &__not-uploaded {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    div {
+      text-align: center;
+    }
+  }
+  &__select {
+    /deep/ & input {
+      border: none;
+    }
+  }
+  &__assign-button {
+    float: right;
+    margin-left: 10px;
+  }
+  &__dialog {
+    /deep/ & .el-dialog__header {
+      padding: 24px;
+    }
+    /deep/ & .el-dialog__title {
+      color: black;
+      font-family: $font-bold;
+      font-size: 18px;
+    }
+    /deep/ & .el-dialog__body {
+      padding: 24px;
+    }
+    &__input {
+      width: 100%;
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 40px;
+    }
+    &__folder-name {
+      margin-top: 5px;
+    }
+  }
+  .case-search {
+    width: 60%;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+}
+.load-more-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  button {
+    width: 190px;
+  }
+}
+.custom-style {
+  margin-bottom: 10px;
+}
